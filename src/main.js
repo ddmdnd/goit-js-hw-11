@@ -4,7 +4,7 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
-
+import stop from "./img/logoStop.svg";
 const form = document.querySelector('.searchBox');
 const inputSearch = form.querySelector('.searchInput');
 const gallery = document.querySelector('.gallery')
@@ -17,10 +17,13 @@ form.addEventListener("submit", (e)=>{
         const markup = photosResponse(photo.hits);
         setTimeout(()=>{
             if(!photo.total){
-                console.log("Catch")
-                iziToast.error({
-                        title: 'Error',
+                iziToast.show({
+                        id: 'messageError',
+                        position: 'topRight',
                         message: 'Sorry, there are no images matching your search query. Please try again!',
+                        iconUrl: stop,
+                        messageColor: 'white',
+                        color: '#EF4040',
                     })}
         gallery.innerHTML = markup;
         const lightbox = new SimpleLightbox('.gallery a', {
@@ -32,9 +35,11 @@ form.addEventListener("submit", (e)=>{
     .catch((error) => {
         console.log(error)
         iziToast.error({
+            position: 'topRight',
             title: 'Error',
             message: `${error}`,
     });
+    form.rest()
 
 });
 })

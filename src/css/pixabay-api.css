@@ -1,26 +1,4 @@
 
-
-/* .galarry{
-    display: flex;
-}
-.photoItem{
-    width: 360px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-
-}
-.propertyList{
-    display: flex;
-}
-.propertyItem {
-    display: flex;
-    flex-direction: column;
-} */
-/* .imgPhotoList{
-
-} */
-
 h1,
 h2,
 h3,
@@ -55,23 +33,18 @@ button {
 .gallery{
 display: flex;
 max-width: 1440px;
-/* height: 696px; */
-/* padding: 24px 156px; */
 padding: 24px;
 flex-wrap: wrap;
 gap: 24px 24px;
 justify-content: center;
 margin: 0;
-/* width: calc((100% - 48px) / 3); */
 }
 
 .photoItem {
-    /* width: calc((100% - 48px) / 3); */
     box-sizing: border-box;
     width: 360px;
     height:200px;
     border: 1px solid #808080;
-/* background: url(<path-to-image>) lightgray -76px -16.297px / 125.278% 150.297% no-repeat; */
 }
 .img {
   width: 100%;
@@ -79,7 +52,6 @@ margin: 0;
   object-fit: cover;
   margin: 0px;
   padding: 0px;
-/* background: url(<path-to-image>) lightgray -0.011px -123px / 100.006% 225% no-repeat; */
 }
 .titlePhoto{
     width: 100%;
@@ -88,14 +60,12 @@ margin: 0;
     display: flex;
 background: #FFF;
 margin: 0px;
-/* justify-content: center;
-align-items: center; */
 justify-content: space-around;
 
     
 }
 .proportyTitle{
-    color: #2E2F42;
+color: #2E2F42;
 font-family: Montserrat;
 font-size: 12px;
 font-style: normal;
@@ -108,12 +78,12 @@ padding: auto;
 
 }
 .propertyQuantety {
-    color: #2E2F42;
+color: #2E2F42;
 font-family: Montserrat;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 200% */
+line-height: 24px; 
 letter-spacing: 0.48px;
 padding: auto;
 }
@@ -122,20 +92,5 @@ padding: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
-    /* height: 48px; */
-    /* margin-right: 20px; */
 
 }
-/* .gallery img { 
-  transition: transform 0.3s ease-in-out;
-} */
-/* .gallery img:focus,
-.gallery img:hover
- {
-  transform: scale(1.04);
-  outline: none; 
-} */
-/* .loadingText {
-  display:inline;
-} */
