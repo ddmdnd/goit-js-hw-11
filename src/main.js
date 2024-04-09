@@ -2,12 +2,7 @@ import {getPhotoServer} from "./js/pixabay-api.js";
 import {photosResponse} from "./js/render-function.js";
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-
-
 // import {photoResponse} from "./js/render-function.js";
-
-
-
 const form = document.querySelector('.searchBox');
 const inputSearch = form.querySelector('.searchInput');
 // const buttonSubmit = form.querySelector('.button-search')
